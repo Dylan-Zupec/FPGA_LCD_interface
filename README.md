@@ -8,5 +8,5 @@ operation before sucessive writes. This requires only a minimal amount of additi
 the timing requirements of each read/write operation are handled as well. 
 
 As an example of implementation, "top.vhd" contains logic to write a message to both lines of a 16x2 LCD. Each line holds it own message
-that is independent of one another. If the message on a single line is longer than 16 characters (the width of the LCD), the line will
+that is independent of the other. If the message on a single line is longer than 16 characters (the width of the LCD), the line will
 automatically scroll, shifting each character left every 500 ms. Otherwise, it is static.      
